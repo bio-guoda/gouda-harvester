@@ -44,7 +44,7 @@ def main():
                     if line_dict["archive_format"] == "DwCA":
                         mime = "application/zip"
 
-                    cron_line = line_dict["update interval/cron expression"]
+                    cron_line = line_dict["cron"]
                     if PUSH_ALL or (len(cron_line) > 0 and pycron.is_now(cron_line)):
                         logger.info(line_dict)
                         try:
