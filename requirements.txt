@@ -1,0 +1,4 @@
+pycron
+idigbio>=0.7.0
+requests
+unicodecsv
